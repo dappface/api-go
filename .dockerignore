@@ -1,0 +1,7 @@
+.git
+.github
+.gitignore
+api-go
+bin
+Dockerfile
+README.md

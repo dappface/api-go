@@ -1,0 +1,54 @@
+type Entities {
+  hashtags: [Hashtag!]!
+  media: [Media!]
+  symbols: [Symbol!]!
+  urls: [URL!]!
+  userMentions: [UserMention!]!
+  polls: [Poll!]
+}
+
+type ExtendedEntities {
+  media: [Media!]!
+}
+
+type Hashtag {
+  indices: [Int!]!
+  text: String!
+}
+
+type URL {
+  displayUrl: String!
+  expandedUrl: String!
+  indices: [Int!]!
+  url: String!
+  unwound: Unwound
+}
+
+type Unwound {
+  url: String!
+  status: Int!
+  title: String!
+  description: String!
+}
+
+type UserMention {
+  idStr: String!
+  indices: [Int!]!
+  name: String!
+  screenName: String!
+}
+
+type Symbol {
+  indices: [Int!]!
+  text: String!
+}
+
+type Poll {
+  options: [Option!]!
+  endDatetime: Time
+}
+
+type Option {
+  position: Int!
+  text: String!
+}

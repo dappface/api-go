@@ -1,0 +1,13 @@
+type RSSEntry {
+  author: String!
+  categories: [String!]!
+  description: String!
+  feedTitle: String!
+  guid: String!
+  imageUrl: String!
+  language: String!
+  publisherUrl: String!
+  title: String!
+  url: String!
+  createdAt: Time!
+}

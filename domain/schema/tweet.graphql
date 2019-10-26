@@ -1,0 +1,25 @@
+type Tweet {
+  createdAt: Time!
+  idStr: String!
+  text: String!
+  source: String!
+  truncated: Boolean!
+  inReplyToStatusIdStr: String
+  inReplyToUserIdStr: String
+  inReplyToScreenName: String
+  user: User!
+  coordinates: Coordinates
+  place: Place
+  quotedStatusIdStr: String
+  isQuoteStatus: Boolean!
+  quotedStatus: Tweet
+  retweetedStatus: Tweet
+  replyCount: Int!
+  retweetCount: Int!
+  favoriteCount: Int
+  entities: Entities!
+  extendedEntities: ExtendedEntities
+  favorited: Boolean
+  retweeted: Boolean!
+  lang: String
+}

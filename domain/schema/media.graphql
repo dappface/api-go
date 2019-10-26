@@ -1,0 +1,25 @@
+type Media {
+  displayUrl: String!
+  expandedUrl: String!
+  idStr: String!
+  indices: [Int!]!
+  mediaUrl: String!
+  mediaUrlHttps: String!
+  sizes: Sizes!
+  sourceStatusIdStr: String
+  type: String!
+  url: String!
+}
+
+type Sizes {
+  thumb: Size!
+  large: Size!
+  medium: Size!
+  small: Size!
+}
+
+type Size {
+  w: Int!
+  h: Int!
+  resize: String!
+}

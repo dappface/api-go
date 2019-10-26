@@ -1,0 +1,27 @@
+type User {
+  idStr: String!
+  name: String!
+  screenName: String!
+  location: String
+  url: String
+  entities: UserEntities
+  description: String
+  protected: Boolean!
+  verified: Boolean!
+  followersCount: Int!
+  friendsCount: Int!
+  listedCount: Int!
+  favouritesCount: Int!
+  statusesCount: Int!
+  createdAt: Time!
+  lang: String!
+  profileImageUrlHttps: String!
+}
+
+type UserEntities {
+  url: UserURL!
+}
+
+type UserURL {
+  urls: [URL!]!
+}

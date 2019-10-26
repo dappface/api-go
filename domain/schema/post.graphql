@@ -1,0 +1,22 @@
+type FeedConnection implements Connection {
+  edges: [PostEdge!]!
+  pageInfo: PageInfo!
+}
+
+type PostEdge implements Edge {
+  cursor: String!
+  node: Post!
+}
+
+union PostData = RSSEntry | Tweet
+
+type Post implements Node {
+  id: ID!
+  postDataId: String!
+  postType: String!
+  postData: PostData!
+  language: String
+  publishedAt: Time!
+  createdAt: Time!
+  updatedAt: Time!
+}

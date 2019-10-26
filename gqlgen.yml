@@ -1,0 +1,55 @@
+schema:
+  - domain/schema/*.graphql
+exec:
+  filename: interface/api/server/generated/generated.go
+  package: generated
+resolver:
+  filename: interface/api/server/resolver/resolver.go
+  type: Resolver
+  package: resolver
+model:
+  filename: domain/model/generated.go
+  package: model
+models:
+  Entities:
+    model: github.com/dappface/api-go/domain/model.Entities
+  ExtendedEntities:
+    model: github.com/dappface/api-go/domain/model.ExtendedEntities
+  Hashtag:
+    model: github.com/dappface/api-go/domain/model.Hashtag
+  URL:
+    model: github.com/dappface/api-go/domain/model.URL
+  Unwound:
+    model: github.com/dappface/api-go/domain/model.Unwound
+  UserMention:
+    model: github.com/dappface/api-go/domain/model.UserMention
+  Symbol:
+    model: github.com/dappface/api-go/domain/model.Symbol
+  Poll:
+    model: github.com/dappface/api-go/domain/model.Poll
+  Option:
+    model: github.com/dappface/api-go/domain/model.Option
+  Coordinates:
+    model: github.com/dappface/api-go/domain/model.Coordinates
+  Place:
+    model: github.com/dappface/api-go/domain/model.Place
+  Media:
+    model: github.com/dappface/api-go/domain/model.Media
+  Sizes:
+    model: github.com/dappface/api-go/domain/model.Sizes
+  Size:
+    model: github.com/dappface/api-go/domain/model.Size
+  Post:
+    model: github.com/dappface/api-go/domain/model.Post
+  PostData:
+    model: github.com/dappface/api-go/domain/model.PostData
+  RSSEntry:
+    model: github.com/dappface/api-go/domain/model.RSSEntry
+  Tweet:
+    model: github.com/dappface/api-go/domain/model.Tweet
+  User:
+    model: github.com/dappface/api-go/domain/model.User
+  UserEntities:
+    model: github.com/dappface/api-go/domain/model.UserEntities
+  UserURL:
+    model: github.com/dappface/api-go/domain/model.UserURL

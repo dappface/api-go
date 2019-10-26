@@ -1,0 +1,14 @@
+type Coordinates {
+  coordinates: [Float!]
+  coordinatesType: String!
+}
+
+type Place {
+  id: String!
+  url: String!
+  placeType: String!
+  name: String!
+  fullName: String!
+  countryCode: String!
+  country: String!
+}
